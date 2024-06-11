@@ -9,12 +9,12 @@
   - name : Install Docker
     command : sudo apt-get install -y docker.io
     become : yes
-    become_user : root
+   # become_user : root
 
   - name : Start Docker Service
     command : sudo systemctl start docker
     become : yes
-    become_user : root
+  #  become_user : root
 
   - name: Deploy Docker Container
     command: docker run -itd -p 8084:8082 geethadinesh/healthcare-medicure:3.0
