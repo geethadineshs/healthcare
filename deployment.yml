@@ -1,0 +1,18 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: mydep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: deployment
+  template:
+    metadata:
+      name: testpod
+      labels:
+        name: deployment
+    spec:
+      containers:
+        - name: c00
+          image: geethadinesh/banking-finance-project:4.0
