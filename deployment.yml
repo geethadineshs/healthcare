@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
         - name: c00
-          image: geethadinesh/banking-finance-project:4.0
+          image: geethadinesh/healthcare-medicure:3.0
