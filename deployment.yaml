@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: healthcare-medicure
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: healthcare-medicure
+  template:
+    metadata:
+      labels:
+        app: healthcare-medicure
+    spec:
+      containers:
+        - name: healthcare-medicure
+          image: geethadinesh/healthcare-medicure:3.0
+          ports:
+            - containerPort: 80
+
