@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'master', url: 'https://github.com/geethadinesh/healthcare.git'
+                git credentialsId: 'git-k8s-token', url: 'https://github.com/geethadineshs/healthcare.git', branch: 'master'
             }
         }
 
