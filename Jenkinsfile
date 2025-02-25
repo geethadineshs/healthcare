@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/geethadinesh/your-repo.git'
+                git branch: 'master', url: 'https://github.com/geethadinesh/healthcare.git'
             }
         }
 
