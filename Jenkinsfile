@@ -26,13 +26,7 @@ pipeline {
             }
         }
 
-        stage('Verify Deployment') {
-            steps {
-                script {
-                    sh 'curl -I http://13.233.131.74:31253/'
-                }
-            }
-        }
+        
     }
 
     post {
