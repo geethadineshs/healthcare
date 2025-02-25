@@ -18,6 +18,7 @@ pipeline {
                     withKubeConfig([credentialsId: 'KUBE_CONFIG']) {
                         sh 'kubectl apply -f deployment.yaml'
                         sh 'kubectl apply -f service.yaml'
+                        sh 'kubectl get nodes'
                         sh 'kubectl get pods'
                         sh 'kubectl get svc'
                     }
