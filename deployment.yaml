@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: healthcare-medicure
-          image: geethadinesh/healthcare-medicure:3.0
+          image: geethadinesh/healthcare-pipeline:v1.1
           ports:
             - containerPort: 80
 
